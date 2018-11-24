@@ -57,7 +57,7 @@ let CIMKeyMapUpper = [
         #if DEBUG
         connectionName += "_Debug"
         #endif
-        self.server = IMKServer(name: connectionName, bundleIdentifier: mainBundle.bundleIdentifier)
+        self.server = IMKServer(name: "connectionName", bundleIdentifier: mainBundle.bundleIdentifier)
         self.candidates = IMKCandidates(server: server, panelType: kIMKSingleColumnScrollingCandidatePanel)
 
         super.init()
